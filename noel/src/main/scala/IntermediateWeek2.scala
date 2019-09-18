@@ -1,11 +1,9 @@
 import doodle.core._
 import doodle.image._
-import doodle.image.syntax._
 import doodle.image.syntax.core._
 import doodle.java2d._
 import doodle.reactor._
 import scala.concurrent.duration._
-import scala.runtime.SymbolLiteral
 
 object IntermediateWeek2 {
   // Question 1: A reasonable answer is that a class is a template for an
@@ -21,7 +19,7 @@ object IntermediateWeek2 {
   import java.time.LocalDate
   final case class Pet(
       name: String,
-      dateOfBirth: Date,
+      dateOfBirth: LocalDate,
       species: String,
       breed: String
   )
@@ -39,14 +37,14 @@ object IntermediateWeek2 {
     // Some images we'll use in drawing
     val planet = Image.circle(50).fillColor(Color.royalBlue).noStroke
     val firstMoon = Image.circle(25).fillColor(Color.steelBlue).noStroke
-    val secondMoon = Image.circle(15).fillColor(Color.seagreen).noStroke
+    val secondMoon = Image.circle(15).fillColor(Color.seaGreen).noStroke
 
     // Start at 0 degrees
     val initial = 0.degrees
 
     // Increment angle by 5 degrees every tick
     def onTick(value: Angle): Angle =
-      value + 5.degrees
+      value + 1.degrees
 
     // Tick every 20 ms
     def tickRate = 20.millis
@@ -55,11 +53,11 @@ object IntermediateWeek2 {
     def render(value: Angle): Image = {
       val scene =
         secondMoon
-          .at(150, value * 5)
+          .at(Point(50, value * 5.0).toVec)
           .on(firstMoon)
-          .at(100, value * -3)
+          .at(Point(75, value * -3.0).toVec)
           .on(planet)
-          .at(300, value)
+          .at(Point(200, value).toVec)
 
       scene
     }
@@ -69,6 +67,8 @@ object IntermediateWeek2 {
       false
   }
 
+  def runOrbits(): Unit =
+    Orbits.run(Frame.size(800, 800))
 
   // Question 6
   //
