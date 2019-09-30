@@ -3,6 +3,14 @@
 Week 4 - courtesy of Scott Coutts
 Lower Intermediate set
 
+This week we can build on our Algebraic Data Type and Structural Recursion knowledge,
+and begin to introduce Generics and passing some functions around.
+Read Chapter 5, sections 5.1 and 5.2.
+Some links from the Scala docs with potentially simpler explanations:
+Generics https://docs.scala-lang.org/tour/generic-classes.html
+Higher Order Functions (Section 5.2.1 & 5.2.2 in Essential Scala cover this well too)
+https://docs.scala-lang.org/tour/higher-order-functions.html
+
 1. There are 4 types of DNA (Deoxyribonucleic acid)
 * C - cytosine
 * G - guanine
