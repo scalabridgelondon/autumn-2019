@@ -1,7 +1,7 @@
 /*
 
 Week 4 - courtesy of Scott Cutts
-Lower Intermediate set
+Lighter Intermediate set
 
 This week we can build on our Algebraic Data Type and Structural Recursion knowledge,
 and begin to introduce Generics and passing some functions around.
