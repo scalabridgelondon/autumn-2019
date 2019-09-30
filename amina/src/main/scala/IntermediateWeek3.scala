@@ -1,5 +1,5 @@
 
-// Week 3 - Lower Intermediate lesson questions courtesy of Scott Coutts
+// Week 3 - Lower Intermediate lesson questions courtesy of Scott Cutts
 
 // Here is the pre-class reading:
 // https://github.com/scalabridgelondon/lesson-plans/blob/master/intermediate/questions/week-3.md

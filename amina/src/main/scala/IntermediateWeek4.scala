@@ -1,6 +1,6 @@
 /*
 
-Week 4 - courtesy of Scott Coutts
+Week 4 - courtesy of Scott Cutts
 Lower Intermediate set
 
 This week we can build on our Algebraic Data Type and Structural Recursion knowledge,
