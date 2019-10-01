@@ -106,14 +106,12 @@ def matchStrand(letters: Strand): Strand = {
 
  /*
 6. We've discovered Alien life! Some little potato shaped things near Alpha-Centauri.
-
- They are built out of ZNA (Zanynucleic acid). Just like DNA, there are four types of ZNA:
+They are built out of ZNA (Zanynucleic acid). Just like DNA, there are four types of ZNA:
  * Z - zanine
-   * V - vacuracil
-   * W - wowadine
-   * P - potatoes
-
-   Implement ZNA.
+ * V - vacuracil
+ * W - wowadine
+ * P - potatoes
+Implement ZNA.
   */
 
 sealed trait ZNA
@@ -131,14 +129,18 @@ Generic classes take a letter as a parameter, which means they can take any type
 Identify the types that you want to make generic and add a letter in a square bracket parameter.
 
 7c) Generic types can be declared in trait and class declerations - can we use this in our ADTs then?
+*/
+case class Box[A](x: A)
 
-
+/*
 8. A strand of ZNA works in exactly the same way as DNA.
 We have a strategy for this so lets change our Strand ADT into a generic!
-What happens now if we call the genetic code method for ZNA?
-What about Pair Strands?
-*/
+What happens now if we call the genetic code method for ZNA? What about Pair Strands?
 
-case class Box[A](x: A)
+see above
+ */
+
+
+
 
 
